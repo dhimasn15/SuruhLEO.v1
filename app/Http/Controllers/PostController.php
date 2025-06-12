@@ -12,15 +12,11 @@ class PostController extends Controller
 
     // 
     public function home()
-{
-    $userName = auth()->check() ? auth()->user()->name : ', silahkan login';
+    {
+        $userName = auth()->check() ? auth()->user()->name : ', silahkan login';
+        return view('input_form.home', compact('userName'));
+    }
     
-    // Ambil semua data dari tabel input_forms
-    $input_form = InputForm::all(); 
-
-    return view('input_form.home', compact('userName', 'input_form'));
-}
-
 
     public function about()
     {

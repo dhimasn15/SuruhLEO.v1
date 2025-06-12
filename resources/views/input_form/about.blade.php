@@ -184,17 +184,32 @@
 <section class="bg-light text-dark py-5">
     <div class="container">
         <div class="row align-items-center">
+            
+            <!-- Gambar -->
             <div class="col-lg-6 mb-4">
-                <img src="https://via.placeholder.com/500x300" alt="Tentang Kami" class="img-fluid rounded shadow">
+            <img 
+    src="{{ asset('gambar/about.png') }}" 
+    alt="Tentang Kami" 
+    class="img-fluid rounded shadow" 
+    style="max-width: 100%; height: auto;"
+>
             </div>
+            
+            <!-- Deskripsi -->
             <div class="col-lg-6">
                 <h2 class="text-primary">Mengenal SuruhLEO</h2>
-                <p class="lead"><b>SuruhLEO</b> adalah platform inovatif yang dirancang untuk mempermudah kehidupan sehari-hari Anda dengan menyediakan layanan "suruhan" yang cepat, terpercaya, dan efisien.</p>
-                <p class="lead">Kami hadir dengan visi menciptakan solusi praktis untuk kebutuhan Anda, mulai dari tugas-tugas kecil hingga permintaan khusus, semuanya dengan pendekatan yang ramah dan profesional.</p>
+                <p class="lead">
+                    <strong>SuruhLEO</strong> adalah platform inovatif yang dirancang untuk mempermudah kehidupan sehari-hari Anda dengan menyediakan layanan "suruhan" yang cepat, terpercaya, dan efisien.
+                </p>
+                <p class="lead">
+                    Kami hadir dengan visi menciptakan solusi praktis untuk kebutuhan Anda, mulai dari tugas-tugas kecil hingga permintaan khusus, semuanya dengan pendekatan yang ramah dan profesional.
+                </p>
             </div>
+            
         </div>
     </div>
 </section>
+
 
 <!-- Our Mission Section -->
 <section class="bg-dark text-light py-5">
